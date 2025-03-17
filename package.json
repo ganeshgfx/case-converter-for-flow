@@ -4,7 +4,7 @@
      "description": "Case converter plugin for Flow Launcher",
      "main": "main.js",
      "dependencies": {
-          "clipboard-copy": "^4.0.1",
+          "copy-paste": "^1.5.3",
           "open": "^8.4.0"
      },
      "scripts": {

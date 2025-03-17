@@ -1,6 +1,5 @@
 const open = require("./node_modules/open");
-const copy = require("clipboard-copy");
-
+const
 const { method, parameters } = JSON.parse(process.argv[2]);
 
 function toCamelCase(str) {
@@ -122,7 +121,7 @@ if (method === "query") {
 
 if (method === "copy_to_clipboard") {
      const textToCopy = parameters[0];
-     copy(textToCopy);
+     clipboard.writeSync(textToCopy);
 }
 
 if (method === "do_something_for_query") {
