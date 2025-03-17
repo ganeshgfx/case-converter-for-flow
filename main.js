@@ -1,5 +1,5 @@
 const open = require("./node_modules/open");
-const
+const ncp = require("copy-paste");
 const { method, parameters } = JSON.parse(process.argv[2]);
 
 function toCamelCase(str) {
@@ -9,7 +9,6 @@ function toCamelCase(str) {
           )
           .replace(/\s+/g, "");
 }
-
 function toPascalCase(str) {
      return str
           .replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match) => match.toUpperCase())
@@ -121,7 +120,7 @@ if (method === "query") {
 
 if (method === "copy_to_clipboard") {
      const textToCopy = parameters[0];
-     clipboard.writeSync(textToCopy);
+     ncp.copy(textToCopy);
 }
 
 if (method === "do_something_for_query") {
