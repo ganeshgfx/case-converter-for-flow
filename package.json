@@ -1,0 +1,16 @@
+{
+     "name": "flow-launcher-case-converter",
+     "version": "1.0.0",
+     "description": "Case converter plugin for Flow Launcher",
+     "main": "main.js",
+     "dependencies": {
+          "clipboard-copy": "^4.0.1",
+          "open": "^8.4.0"
+     },
+     "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "keywords": [],
+     "author": "",
+     "license": "ISC"
+}

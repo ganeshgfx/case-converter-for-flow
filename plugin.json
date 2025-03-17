@@ -1,0 +1,12 @@
+{
+     "ID": "caseConverter",
+     "ActionKeyword": "case",
+     "Language": "javascript",
+     "ExecuteFileName": "main.js",
+     "IcoPath": "Images\\app.png",
+     "Name": "Case Converter",
+     "Description": "Convert text to various case formats",
+     "Author": "Ganesh GFX",
+     "Version": "1.0",
+     "Website": "https://www.instagram.com/ganesh.gfx/"
+}
