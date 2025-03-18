@@ -23,6 +23,10 @@ function toKebabCase(str) {
      return str.replace(/\s+/g, "-").toLowerCase();
 }
 
+function toMacroCase(str) {
+     return str.replace(/\s+/g, "_").toUpperCase();
+}
+
 function toTitleCase(str) {
      return str.replace(
           /\w\S*/g,
@@ -109,6 +113,15 @@ if (method === "query") {
                               JsonRPCAction: {
                                    method: "copy_to_clipboard",
                                    parameters: [toKebabCase(text)],
+                              },
+                              IcoPath: "Images\\app.png",
+                         },
+                         {
+                              Title: toMacroCase(text),
+                              Subtitle: "MACRO_CASE - Click to copy",
+                              JsonRPCAction: {
+                                   method: "copy_to_clipboard",
+                                   parameters: [toMacroCase(text)],
                               },
                               IcoPath: "Images\\app.png",
                          },
